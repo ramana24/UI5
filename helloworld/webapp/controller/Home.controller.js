@@ -7,7 +7,7 @@ sap.ui.define([
   
     return Controller.extend("CalculatorApp.controller.Main", {
       onInit: function() {
-        // Initialization code here
+        // Initialization code here // sample code
       },
   
       onCalculate: function() {
