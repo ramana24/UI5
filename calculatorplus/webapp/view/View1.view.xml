@@ -1,0 +1,34 @@
+<mvc:View controllerName="ux.calculatorplus.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page title="Calculator">
+        <VBox class="sapUiSmallMargin">
+          <Input id="display" value="" editable="false" width="100%" />
+          <HBox>
+            <Button text="1" press="onNumberPress" />
+            <Button text="2" press="onNumberPress" />
+            <Button text="3" press="onNumberPress" />
+          </HBox>
+          <HBox>
+            <Button text="4" press="onNumberPress" />
+            <Button text="5" press="onNumberPress" />
+            <Button text="6" press="onNumberPress" />
+          </HBox>
+          <HBox>
+            <Button text="7" press="onNumberPress" />
+            <Button text="8" press="onNumberPress" />
+            <Button text="9" press="onNumberPress" />
+          </HBox>
+          <HBox>
+            <Button text="+" press="onOperatorPress" />
+            <Button text="-" press="onOperatorPress" />
+            <Button text="*" press="onOperatorPress" />
+          </HBox>
+          <HBox>
+            <Button text="/" press="onOperatorPress" />
+            <Button text="=" press="onCalculate" />
+            <Button text="C" press="onClear" />
+          </HBox>
+        </VBox>
+      </Page>
+</mvc:View>

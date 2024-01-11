@@ -1,0 +1,73 @@
+<mvc:View controllerName="ux.helloworld.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Page id="page" title="My First Program">
+        <content> 
+<HBox class="sapUiLargeMargin"> 
+ <Text  text="Basic Building  Blocks"></Text> 
+
+<!-- Section for Button  -->
+<VBox> 
+<HBox> 
+<Text  class="sapUiMediumMarginTopBottom" text="Exercise 1"></Text>
+
+<Button class="sapUiMediumMarginTopBottom sapUiSmallMarginBeginEnd" type="Reject" text="Reject" press="onPress" />
+
+</HBox>
+<!-- Section for Input control  -->
+<HBox> 
+<Text  class="sapUiMediumMarginTopBottom" text="Exercise 2"></Text>
+<Label  class="sapUiMediumMarginTopBottom sapUiSmallMarginBeginEnd" showColon="true"  required="true" text="Email Id"></Label>
+<Input class="sapUiMediumMarginTopBottom sapUiSmallMarginBeginEnd" type="Password" ></Input>
+</HBox>
+</VBox>
+</HBox>
+
+
+<HBox class="sapUiLargeMargin"> 
+ <Text text="Calculator Program"> </Text>
+ <!-- Calulator Program logic 1 -->
+ <Panel  class="sapUiMediumMarginTopBottom" headerText="Lets Solve it !"> 
+
+  <VBox id="calc">
+<Input id="output"></Input>
+<HBox>  <Button class="sapUiTinyMargin" press="myFunction" text="9"></Button>  <Button class="sapUiTinyMargin" text="8"></Button>  <Button class="sapUiTinyMargin" text="7"></Button> <Button class="sapUiTinyMargin" type="Accept" text="+"></Button>     </HBox>
+<HBox>  <Button class="sapUiTinyMargin" text="6"></Button>  <Button class="sapUiTinyMargin" text="5"></Button>  <Button class="sapUiTinyMargin" text="4"></Button> <Button  class="sapUiTinyMargin" type="Accept" text="-"></Button>     </HBox>
+<HBox>  <Button  class="sapUiTinyMargin" text="3"></Button>  <Button id="id2" class="sapUiTinyMargin" text="2"></Button>  <Button id="id1" class="sapUiTinyMargin" text="1"></Button>  <Button class="sapUiTinyMargin" type="Accept" text="x"></Button>    </HBox>
+<HBox>  <Button  class="sapUiTinyMargin" text="0"></Button>  <Button  class="sapUiTinyMargin" type= "Reject" text="AC"></Button> <Button class="sapUiTinyMargin"  type="Emphasized" onPress="onAdd" text="="></Button> <Button class="sapUiTinyMargin"  type="Accept" text="%"></Button>      </HBox>
+
+  </VBox>
+
+
+
+ </Panel>
+<!-- Calculator Program logic 2 -->
+ <Panel  class="sapUiMediumMargin" headerText="Lets Calulate"> 
+
+    <VBox>
+  <HBox> 
+    
+    <Label text="Enter Value 1" showColon="true" ></Label> <Input class="sapUiTinyMarginBegin" id="inputNum1"></Input> 
+
+</HBox>    
+    <HBox  > 
+    <Label text="Enter Value 2" showColon="true"></Label><Input class="sapUiTinyMarginBegin" id="inputNum2"></Input> 
+
+</HBox> 
+  <HBox> <Label  showColon="true" text="Operation"></Label><ComboBox id="selectOperation" class="sapUiMediumMarginBegin" maxWidth="80%"> <core:Item key="add" text="Add" /> <core:Item key="subtract" text="Subtract" />
+    <core:Item key="multiply" text="Multiply" /> <core:Item key="divide" text="Divide" /></ComboBox></HBox>
+
+  <HBox><Button text="Calculate" press="onCalculate"></Button></HBox>
+    </VBox>
+    <HBox> 
+    
+        <Text id="result" /> 
+    
+    </HBox>  
+  
+  
+   </Panel>
+</HBox>
+        </content>
+    </Page>
+</mvc:View>
